@@ -1,6 +1,7 @@
 import os
+import streamlit as st
 from langchain_groq import ChatGroq
-from dotenv import load_dotenv
+
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
@@ -11,10 +12,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 def initialize_llm():
-    load_dotenv()  # Loads variables from .env file
+
     llm = ChatGroq(
         temperature=0,
-        api_key=os.getenv("GROQ_API_KEY"),
+        api_key=st.secrets("GROQ_API_KEY"),
         model="llama-3.3-70b-versatile"
     )
     return llm
