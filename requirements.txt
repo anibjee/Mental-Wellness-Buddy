@@ -1,9 +1,16 @@
-streamlit
-hf_xet
-langchain_groq
-langchain_core
-langchain_community
-chromadb
-sentence-transformers
-TextLoader
-torch
+# Core dependencies
+streamlit==1.32.0
+huggingface-hub==0.21.4  # Assuming "hf_xet" was a typo
+langchain-groq==0.1.2
+langchain-core==0.1.40
+langchain-community==0.0.29
+chromadb==0.4.24
+sentence-transformers==2.3.1
+torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
+
+# Compatibility dependencies
+protobuf==3.20.3  # Critical for ChromaDB
+grpcio==1.62.1
+grpcio-tools==1.62.1
+opentelemetry-api==1.22.0
+opentelemetry-sdk==1.22.0
