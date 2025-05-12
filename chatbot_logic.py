@@ -1,3 +1,4 @@
+import sys
 import os
 import streamlit as st
 from langchain_groq import ChatGroq
@@ -9,6 +10,10 @@ from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+# Force use of modern SQLite
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 def initialize_llm():
