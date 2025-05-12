@@ -1,0 +1,9 @@
+streamlit
+hf_xet
+langchain_groq
+langchain_core
+langchain_community
+chromadb
+sentence-transformers
+TextLoader
+torch
