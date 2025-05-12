@@ -15,7 +15,6 @@ Welcome to the **Mental Wellness Buddy**, a Retrieval-Augmented Generation (RAG)
 - [🧪 Run in Jupyter Notebook](#-run-in-jupyter-notebook)
 - [🔄 Data Preparation Workflow](#-data-preparation-workflow)
 - [🛠️ Tech Stack & Libraries](#-tech-stack--libraries)
-- [📄 License](#-license)
 - [🤝 Contributing](#-contributing)
 
 ---
