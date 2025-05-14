@@ -24,7 +24,7 @@ Welcome to the **Mental Wellness Buddy**, a Retrieval-Augmented Generation (RAG)
 - 💬 Human-like conversational experience
 - 🧘 Empathy + practical advice for mental wellness
 - 🔍 Semantic search powered by vector embeddings
-- 🧠 LLM (LLaMA-3 via Groq) generates context-aware responses
+- 🧠 LLM (Meta LLaMA 3-1-70B Instruct  via Groq) generates context-aware responses
 - 🌐 Streamlit UI for easy interaction
 
 ---
